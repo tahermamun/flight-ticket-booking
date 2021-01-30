@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Header and Menu Section-->
+    <header class="container">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a class="active" href="#">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Booking Section Start-->
+    <main class="container">
+        <section class="content" id="booking-area">
+            <div class="booking-form">
+                <h3>Booking Flights</h3>
+                <div class="input-group">
+                    <label for="">Flying From</label>
+                    <input class="inp-style" type="text" name="" placeholder="Dhake, Bangladesh">
+                </div>
+                <div class="input-group">
+                    <label for="">Flying To</label>
+                    <input class="inp-style" type="text" name="" placeholder="New York, United States">
+                </div>
+                <div class="inputs">
+                    <div class="input-group">
+                        <label" for="">Departure</label>
+                            <input class="inp-style" type="date" name="">
+                    </div>
+                    <div class="input-group">
+                        <label for="">Return</label>
+                        <input class="inp-style" type="date" name="">
+                    </div>
+                </div>
+                <div class="input-group f-class">
+                    <div>
+                        <!-- There are two type of class:-> first class and Economy class -->
+                        <label for="">First Class ($150)</label>
+                        <input id="first-class-quantity" class="inp-style inp-width" type="number" name="" value="0">
+                    </div>
+                    <div class="plus-minus-btn">
+                        <p> <span id="first-class-plus-btn">+</span> <span id="first-class-minus-btn">-</span> </p>
+                    </div>
+                </div>
+
+                <div class="input-group f-class">
+                    <div>
+                        <label for="">Economy ($100)</label>
+                        <input id="economy-class-quantity" class="inp-style inp-width" type="number" name="" value="0">
+                    </div>
+                    <div class="plus-minus-btn">
+                        <p> <span id="economy-class-plus-btn">+</span> <span id="economy-class-minus-btn">-</span> </p>
+
+                    </div>
+                </div>
+                <div class="calculations">
+                    <div class="amount">
+                        <div class="left">
+                            <p>Subtotal</p>
+                        </div>
+                        <div class="right">
+                            <p id="sub-total">$00</p>
+                        </div>
+                    </div>
+
+                    <div class="amount">
+                        <div class="left">
+                            <p>Charge 10% VAT</p>
+                        </div>
+                        <div class="right">
+                            <p id="tex">$0</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="amount">
+                        <div class="left">
+                            <h4>Total</h4>
+                        </div>
+                        <div class="right">
+                            <p id="grand-total-amount">$00</p>
+                        </div>
+                    </div>
+                </div>
+                <button id="book-now-btn" class="btn-style">Book Now</button>
+            </div>
+
+            <div class="booking-content">
+                <h1>discover <br> around the world</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicingelit. Provident voluptatibus quam fuga laborumalias
+                    veniam libero autem quasi maxime ullam vero nama imi dolor, architecto ab facilis eaque deserunt
+                    nobise voluptatibus quam</p>
+            </div>
+        </section>
+
+        <!--Booking Section End-->
+
+
+
+        <!-- Invoice section Start -->
+        <section class="invoice-section" id="invoice-area">
+            <div class="invoice-title">
+                <h2>Your Order Is Confirmed</h2>
+                <h3>Order Details</h3>
+            </div>
+            <hr>
+            <div class="invoice-body">
+                <h1>Thank You Dear Customer, For Ordering Us</h1>
+
+                <div class="item-details">
+                    <table>
+                        <caption>Order Summery</caption>
+                        <tr>
+                            <th>ITEMS</th>
+                            <th>PRICE</th>
+                            <th>QUANTITY</th>
+                            <th>SUBTOTAL</th>
+                        </tr>
+                        <tr>
+                            <td>First class </td>
+                            <td class="item-cost">$150</td>
+                            <td id="first-class-quantity-invoice">0</td>
+                            <td id="first-class-cost-invoice" class="item-subtotal">$00</td>
+                        </tr>
+                        <tr>
+                            <td>Economy</td>
+                            <td class="item-cost">$100</td>
+                            <td id="economy-class-quantity-invoice">0</td>
+                            <td id="economy-class-cost-invoice" class="item-subtotal">$00</td>
+                        </tr>
+                        <tr>
+                            <td class="invoice-total-cost-summery" colspan="3">Subtotal:</td>
+                            <td class="invoice-total-summery" id="sub-total-invoice">$00</td>
+                        </tr>
+                        <tr>
+                            <td class="invoice-total-cost-summery" colspan="3">Charge 10% VAT:</td>
+                            <td class="invoice-total-summery" id="tex-invoice">$00</td>
+                        </tr>
+                        <tr>
+                            <td class="invoice-total-cost-summery" colspan="3">Total:</td>
+                            <td class="invoice-total-summery" id="grand-total-amount-invoice">$00</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <!-- Invoice section Start -->
+
+
+
+
+
+        <script src="index.js"></script>
+</body>
+
+</html>
